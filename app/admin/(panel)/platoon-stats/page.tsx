@@ -60,76 +60,90 @@ export default function AdminPlatoonStatsPage() {
             <div key={stat.platoon} className="rounded-lg border border-olive/30 p-4">
               <p className="text-sm font-semibold text-sand">{stat.platoon}</p>
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                <input
-                  type="number"
-                  value={stat.roadmap_percent}
-                  onChange={(event) => {
-                    const next = [...stats];
-                    next[index] = {
-                      ...stat,
-                      roadmap_percent: Number(event.target.value),
-                    };
-                    setStats(next);
-                  }}
-                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
-                  placeholder="Roadmap %"
-                />
-                <input
-                  type="number"
-                  value={stat.drills_percent}
-                  onChange={(event) => {
-                    const next = [...stats];
-                    next[index] = {
-                      ...stat,
-                      drills_percent: Number(event.target.value),
-                    };
-                    setStats(next);
-                  }}
-                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
-                  placeholder="Drills %"
-                />
-                <input
-                  type="number"
-                  value={stat.pt_percent}
-                  onChange={(event) => {
-                    const next = [...stats];
-                    next[index] = {
-                      ...stat,
-                      pt_percent: Number(event.target.value),
-                    };
-                    setStats(next);
-                  }}
-                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
-                  placeholder="PT %"
-                />
-                <input
-                  type="number"
-                  value={stat.ifc_percent}
-                  onChange={(event) => {
-                    const next = [...stats];
-                    next[index] = {
-                      ...stat,
-                      ifc_percent: Number(event.target.value),
-                    };
-                    setStats(next);
-                  }}
-                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
-                  placeholder="IFC %"
-                />
-                <input
-                  type="number"
-                  value={stat.volunteer_count}
-                  onChange={(event) => {
-                    const next = [...stats];
-                    next[index] = {
-                      ...stat,
-                      volunteer_count: Number(event.target.value),
-                    };
-                    setStats(next);
-                  }}
-                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
-                  placeholder="Volunteers"
-                />
+                <label className="flex items-center gap-2 rounded-lg border border-olive/30 bg-matte px-3 py-2">
+                  <span className="text-xs font-medium text-muted whitespace-nowrap">Roadmap</span>
+                  <input
+                    type="number"
+                    value={stat.roadmap_percent}
+                    onChange={(event) => {
+                      const next = [...stats];
+                      next[index] = {
+                        ...stat,
+                        roadmap_percent: Number(event.target.value),
+                      };
+                      setStats(next);
+                    }}
+                    className="w-full bg-transparent text-sm text-sand outline-none"
+                  />
+                  <span className="text-xs text-dim">%</span>
+                </label>
+                <label className="flex items-center gap-2 rounded-lg border border-olive/30 bg-matte px-3 py-2">
+                  <span className="text-xs font-medium text-muted whitespace-nowrap">Drills</span>
+                  <input
+                    type="number"
+                    value={stat.drills_percent}
+                    onChange={(event) => {
+                      const next = [...stats];
+                      next[index] = {
+                        ...stat,
+                        drills_percent: Number(event.target.value),
+                      };
+                      setStats(next);
+                    }}
+                    className="w-full bg-transparent text-sm text-sand outline-none"
+                  />
+                  <span className="text-xs text-dim">%</span>
+                </label>
+                <label className="flex items-center gap-2 rounded-lg border border-olive/30 bg-matte px-3 py-2">
+                  <span className="text-xs font-medium text-muted whitespace-nowrap">PT</span>
+                  <input
+                    type="number"
+                    value={stat.pt_percent}
+                    onChange={(event) => {
+                      const next = [...stats];
+                      next[index] = {
+                        ...stat,
+                        pt_percent: Number(event.target.value),
+                      };
+                      setStats(next);
+                    }}
+                    className="w-full bg-transparent text-sm text-sand outline-none"
+                  />
+                  <span className="text-xs text-dim">%</span>
+                </label>
+                <label className="flex items-center gap-2 rounded-lg border border-olive/30 bg-matte px-3 py-2">
+                  <span className="text-xs font-medium text-muted whitespace-nowrap">IFC</span>
+                  <input
+                    type="number"
+                    value={stat.ifc_percent}
+                    onChange={(event) => {
+                      const next = [...stats];
+                      next[index] = {
+                        ...stat,
+                        ifc_percent: Number(event.target.value),
+                      };
+                      setStats(next);
+                    }}
+                    className="w-full bg-transparent text-sm text-sand outline-none"
+                  />
+                  <span className="text-xs text-dim">%</span>
+                </label>
+                <label className="flex items-center gap-2 rounded-lg border border-olive/30 bg-matte px-3 py-2">
+                  <span className="text-xs font-medium text-muted whitespace-nowrap">Volunteers</span>
+                  <input
+                    type="number"
+                    value={stat.volunteer_count}
+                    onChange={(event) => {
+                      const next = [...stats];
+                      next[index] = {
+                        ...stat,
+                        volunteer_count: Number(event.target.value),
+                      };
+                      setStats(next);
+                    }}
+                    className="w-full bg-transparent text-sm text-sand outline-none"
+                  />
+                </label>
               </div>
               <button
                 type="button"

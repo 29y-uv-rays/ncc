@@ -49,5 +49,44 @@ async function postHandler(request: Request) {
   return NextResponse.json({ ok: true });
 }
 
+async function putHandler(request: Request) {
+  const body = await readJson<{ id?: unknown; name?: unknown }>(request);
+  const id = Number(body.id);
+  const name = String(body.name ?? "").trim();
+
+  if (!id) return jsonError("Cadet ID is required.", 400);
+  if (!name) return jsonError("Name is required.", 400);
+  if (name.length > 100) return jsonError("Name is too long.", 400);
+
+  const { error } = await getSupabaseAdmin()
+    .from("cadets")
+    .update({ name })
+    .eq("id", id);
+  if (error) {
+    console.error("[admin cadets] update error", error);
+    return jsonError("Failed to update cadet.", 500);
+  }
+  return NextResponse.json({ ok: true });
+}
+
+async function deleteHandler(request: Request) {
+  const body = await readJson<{ id?: unknown }>(request);
+  const id = Number(body.id);
+
+  if (!id) return jsonError("Cadet ID is required.", 400);
+
+  const { error } = await getSupabaseAdmin()
+    .from("cadets")
+    .delete()
+    .eq("id", id);
+  if (error) {
+    console.error("[admin cadets] delete error", error);
+    return jsonError("Failed to delete cadet.", 500);
+  }
+  return NextResponse.json({ ok: true });
+}
+
 export const GET = withAdmin(getHandler);
 export const POST = withAdmin(postHandler);
+export const PUT = withAdmin(putHandler);
+export const DELETE = withAdmin(deleteHandler);
