@@ -15,8 +15,8 @@ export default function AdminNotesPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">Edit notes JSON</h2>
+      <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <h2 className="text-lg font-semibold text-sand">Edit notes JSON</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -45,12 +45,12 @@ export default function AdminNotesPage() {
             value={value}
             onChange={(event) => setValue(event.target.value)}
             rows={16}
-            className="w-full rounded-lg border border-gray-200 px-3 py-2 text-sm font-mono"
+            className="w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm font-mono text-sand"
           />
-          {message ? <p className="text-sm text-gray-600">{message}</p> : null}
+          {message ? <p className="text-sm text-muted">{message}</p> : null}
           <button
             type="submit"
-            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white"
+            className="rounded-lg bg-olive px-4 py-2 text-sm font-semibold text-matte"
           >
             Save notes
           </button>

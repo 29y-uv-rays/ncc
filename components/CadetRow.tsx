@@ -12,22 +12,22 @@ export default function CadetRow({ rank, name, platoon, points, cadetId }: Cadet
   const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : null;
 
   return (
-    <div className="flex items-center justify-between border-b border-gray-200 py-3">
+    <div className="flex items-center justify-between border-b border-dark-border py-3">
       <div className="flex items-center gap-3">
-        <span className="text-xs font-medium text-gray-500">{rank}</span>
+        <span className="text-xs font-medium text-muted">{rank}</span>
         <div>
           <Link
             href={`/points/${platoon}/${cadetId}`}
-            className="text-sm font-semibold text-gray-900 hover:text-blue-600"
+            className="text-sm font-semibold text-sand hover:text-olive-light"
           >
             {name}
           </Link>
-          <p className="text-xs font-medium text-gray-500">{platoon}</p>
+          <p className="text-xs font-medium text-muted">{platoon}</p>
         </div>
       </div>
       <div className="flex items-center gap-2">
         {medal ? <span className="text-lg">{medal}</span> : null}
-        <span className="text-sm font-semibold text-gray-900">{points}</span>
+        <span className="text-sm font-semibold text-sand">{points}</span>
       </div>
     </div>
   );

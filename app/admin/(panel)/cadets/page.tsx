@@ -28,8 +28,8 @@ export default function AdminCadetsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">Add cadet</h2>
+      <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <h2 className="text-lg font-semibold text-sand">Add cadet</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -56,26 +56,26 @@ export default function AdminCadetsPage() {
           }}
         >
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="cadetName">
+            <label className="text-xs font-medium text-muted" htmlFor="cadetName">
               Name
             </label>
             <input
               id="cadetName"
               value={name}
               onChange={(event) => setName(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="cadetPlatoon">
+            <label className="text-xs font-medium text-muted" htmlFor="cadetPlatoon">
               Platoon
             </label>
             <select
               id="cadetPlatoon"
               value={platoon}
               onChange={(event) => setPlatoon(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="P1">P1</option>
               <option value="P2">P2</option>
@@ -83,25 +83,25 @@ export default function AdminCadetsPage() {
               <option value="SPEC">SPEC</option>
             </select>
           </div>
-          {message ? <p className="text-sm text-gray-600">{message}</p> : null}
+          {message ? <p className="text-sm text-muted">{message}</p> : null}
           <button
             type="submit"
-            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white"
+            className="rounded-lg bg-olive px-4 py-2 text-sm font-semibold text-matte"
           >
             Add cadet
           </button>
         </form>
       </div>
-      <div className="rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">All cadets</h2>
+      <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <h2 className="text-lg font-semibold text-sand">All cadets</h2>
         <div className="mt-4 space-y-2">
           {cadets.map((cadet) => (
-            <div key={cadet.id} className="flex items-center justify-between border-b py-2">
+            <div key={cadet.id} className="flex items-center justify-between border-b border-dark-border py-2">
               <div>
-                <p className="text-sm font-semibold text-gray-900">{cadet.name}</p>
-                <p className="text-xs font-medium text-gray-500">{cadet.platoon}</p>
+                <p className="text-sm font-semibold text-sand">{cadet.name}</p>
+                <p className="text-xs font-medium text-muted">{cadet.platoon}</p>
               </div>
-              <span className="text-sm font-semibold text-gray-900">
+              <span className="text-sm font-semibold text-sand">
                 {cadet.total_points}
               </span>
             </div>

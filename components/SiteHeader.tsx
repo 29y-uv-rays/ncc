@@ -10,23 +10,23 @@ const navItems = [
 
 export default function SiteHeader() {
   return (
-    <header className="border-b border-gray-200 bg-white">
+    <header className="border-b border-dark-border bg-surface">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-base font-semibold text-gray-900">
+          <Link href="/" className="text-base font-semibold text-sand">
             RINCC Cadet Points
           </Link>
-          <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-medium text-gray-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+          <span className="inline-flex items-center gap-2 rounded-full border border-dark-border bg-surface px-3 py-1 text-xs font-medium text-coyote-light">
+            <span className="h-1.5 w-1.5 rounded-full bg-olive" />
             NCC Portal
           </span>
         </div>
-        <nav className="flex flex-wrap gap-3 text-xs font-medium text-gray-500">
+        <nav className="flex flex-wrap gap-3 text-xs font-medium text-muted">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full border border-gray-200 bg-white px-3 py-1 text-gray-700 transition-colors hover:border-gray-300"
+              className="rounded-full border border-dark-border bg-surface px-3 py-1 text-coyote-light transition-colors hover:border-hover-border"
             >
               {item.label}
             </Link>

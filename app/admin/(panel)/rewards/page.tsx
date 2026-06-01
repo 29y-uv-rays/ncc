@@ -31,8 +31,8 @@ export default function AdminRewardsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">Create reward</h2>
+      <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <h2 className="text-lg font-semibold text-sand">Create reward</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -67,19 +67,19 @@ export default function AdminRewardsPage() {
           }}
         >
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="rewardName">
+            <label className="text-xs font-medium text-muted" htmlFor="rewardName">
               Name
             </label>
             <input
               id="rewardName"
               value={name}
               onChange={(event) => setName(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="pointsRequired">
+            <label className="text-xs font-medium text-muted" htmlFor="pointsRequired">
               Points required
             </label>
             <input
@@ -87,12 +87,12 @@ export default function AdminRewardsPage() {
               type="number"
               value={pointsRequired}
               onChange={(event) => setPointsRequired(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="sortOrder">
+            <label className="text-xs font-medium text-muted" htmlFor="sortOrder">
               Sort order
             </label>
             <input
@@ -100,45 +100,45 @@ export default function AdminRewardsPage() {
               type="number"
               value={sortOrder}
               onChange={(event) => setSortOrder(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="active">
+            <label className="text-xs font-medium text-muted" htmlFor="active">
               Status
             </label>
             <select
               id="active"
               value={active ? "active" : "hidden"}
               onChange={(event) => setActive(event.target.value === "active")}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="active">Active</option>
               <option value="hidden">Hidden</option>
             </select>
           </div>
-          {message ? <p className="text-sm text-gray-600">{message}</p> : null}
+          {message ? <p className="text-sm text-muted">{message}</p> : null}
           <button
             type="submit"
-            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white"
+            className="rounded-lg bg-olive px-4 py-2 text-sm font-semibold text-matte"
           >
             Create reward
           </button>
         </form>
       </div>
-      <div className="rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">Existing rewards</h2>
+      <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <h2 className="text-lg font-semibold text-sand">Existing rewards</h2>
         <div className="mt-4 space-y-3">
           {rewards.map((reward) => (
-            <div key={reward.id} className="rounded-lg border border-gray-200 p-4">
+            <div key={reward.id} className="rounded-lg border border-dark-border p-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm font-semibold text-gray-900">{reward.name}</p>
-                  <p className="text-xs font-medium text-gray-500">
+                  <p className="text-sm font-semibold text-sand">{reward.name}</p>
+                  <p className="text-xs font-medium text-muted">
                     {reward.points_required} pts · Order {reward.sort_order}
                   </p>
                 </div>
-                <span className="text-xs font-medium text-gray-500">
+                <span className="text-xs font-medium text-muted">
                   {reward.active ? "Active" : "Hidden"}
                 </span>
               </div>

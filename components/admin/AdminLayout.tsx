@@ -54,8 +54,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   if (authState !== "ok") {
     return (
-      <div className="min-h-screen bg-white">
-        <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-gray-500">
+      <div className="min-h-screen bg-matte">
+        <div className="mx-auto max-w-5xl px-4 py-8 text-sm text-muted">
           {authState === "loading" ? "Loading..." : "Redirecting..."}
         </div>
       </div>
@@ -63,12 +63,12 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   }
 
   return (
-    <div className="min-h-screen bg-white">
-      <header className="border-b border-gray-200">
+    <div className="min-h-screen bg-matte">
+      <header className="border-b border-dark-border">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
           <div>
-            <p className="text-xs font-medium text-gray-500">Admin</p>
-            <h1 className="text-base font-semibold text-gray-900">RINCC Control</h1>
+            <p className="text-xs font-medium text-muted">Admin</p>
+            <h1 className="text-base font-semibold text-sand">RINCC Control</h1>
           </div>
           <form
             onSubmit={async (event) => {
@@ -82,7 +82,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           >
             <button
               type="submit"
-              className="rounded-full border border-gray-200 px-3 py-1 text-xs font-medium text-gray-700"
+              className="rounded-full border border-dark-border px-3 py-1 text-xs font-medium text-coyote-light"
             >
               Sign out
             </button>
@@ -99,8 +99,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 href={item.href}
                 className={`block rounded-lg border px-3 py-2 text-sm ${
                   active
-                    ? "border-blue-600 text-blue-600"
-                    : "border-gray-200 text-gray-600 hover:border-gray-300"
+                    ? "border-olive text-olive-light"
+                    : "border-dark-border text-muted hover:border-hover-border"
                 }`}
               >
                 {item.label}

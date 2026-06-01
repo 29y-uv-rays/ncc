@@ -35,35 +35,35 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
   const [open, setOpen] = useState(level === 0);
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-white">
+    <div className="rounded-xl border border-dark-border bg-surface">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         className="flex w-full items-center justify-between gap-4 px-6 py-4 text-left"
       >
         <div>
-          <p className="text-xs font-medium text-gray-500">Section</p>
-          <h3 className="text-base font-semibold text-gray-900">{section.title}</h3>
+          <p className="text-xs font-medium text-muted">Section</p>
+          <h3 className="text-base font-semibold text-sand">{section.title}</h3>
           {section.metadata ? (
-            <p className="text-xs font-medium text-gray-500 mt-1">
+            <p className="text-xs font-medium text-muted mt-1">
               {section.metadata}
             </p>
           ) : null}
         </div>
-        <span className="text-gray-400">{open ? "˅" : ">"}</span>
+        <span className="text-dim">{open ? "˅" : ">"}</span>
       </button>
       {open ? (
-        <div className="border-t border-gray-200 px-6 py-4 space-y-4">
+        <div className="border-t border-dark-border px-6 py-4 space-y-4">
           {section.content?.map((paragraph) => (
-            <p key={paragraph} className="text-sm font-normal text-gray-600">
+            <p key={paragraph} className="text-sm font-normal text-muted">
               {paragraph}
             </p>
           ))}
           {section.items ? (
             <div className="space-y-1">
               {section.items.map((item) => (
-                <p key={item} className="text-sm font-normal text-gray-600">
-                  <span className="text-gray-400 mr-2">-</span>
+                <p key={item} className="text-sm font-normal text-muted">
+                  <span className="text-dim mr-2">-</span>
                   {item}
                 </p>
               ))}
@@ -71,11 +71,11 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
           ) : null}
           {section.table ? (
             <div className="overflow-x-auto">
-              <table className="min-w-full border border-gray-200 text-left text-sm text-gray-600">
-                <thead className="bg-gray-50 text-xs font-medium text-gray-500">
+              <table className="min-w-full border border-dark-border text-left text-sm text-muted">
+                <thead className="bg-dark-border/50 text-xs font-medium text-muted">
                   <tr>
                     {section.table.headers.map((header) => (
-                      <th key={header} className="px-3 py-2 border-b border-gray-200">
+                      <th key={header} className="px-3 py-2 border-b border-dark-border">
                         {header}
                       </th>
                     ))}
@@ -87,7 +87,7 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
                       {row.map((cell, cellIndex) => (
                         <td
                           key={`${section.id}-cell-${rowIndex}-${cellIndex}`}
-                          className="px-3 py-2 border-b border-gray-200"
+                          className="px-3 py-2 border-b border-dark-border"
                         >
                           {cell}
                         </td>
@@ -106,16 +106,16 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-xl border border-gray-200 bg-white p-4 transition-colors hover:border-gray-300"
+                  className="rounded-xl border border-dark-border bg-surface p-4 transition-colors hover:border-hover-border"
                 >
-                  <p className="text-sm font-semibold text-gray-900">{link.title}</p>
-                  <p className="text-xs font-medium text-gray-500">{link.description}</p>
+                  <p className="text-sm font-semibold text-sand">{link.title}</p>
+                  <p className="text-xs font-medium text-muted">{link.description}</p>
                 </a>
               ))}
             </div>
           ) : null}
           {section.content_after?.map((paragraph) => (
-            <p key={paragraph} className="text-sm font-normal text-gray-600">
+            <p key={paragraph} className="text-sm font-normal text-muted">
               {paragraph}
             </p>
           ))}

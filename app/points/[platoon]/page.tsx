@@ -74,29 +74,29 @@ export default function PlatoonPage({
         {error ? <ErrorBanner error={error} /> : null}
         {!loading && !error && data ? (
           <>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-xs font-medium text-gray-500">Total points</p>
-                  <p className="text-2xl font-semibold text-gray-900">
+                  <p className="text-xs font-medium text-muted">Total points</p>
+                  <p className="text-2xl font-semibold text-sand">
                     {data.totals.total_points}
                   </p>
                 </div>
-                <span className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs text-gray-700">
+                <span className="rounded-full border border-dark-border bg-surface px-3 py-1 text-xs text-coyote-light">
                   {data.totals.cadet_count} cadets
                 </span>
               </div>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-sm font-semibold text-gray-900">Category breakdown</p>
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-sm font-semibold text-sand">Category breakdown</p>
               <div className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
                 {categoryStats.map((stat) => (
                   <CircularRing key={stat.label} value={stat.value} label={stat.label} />
                 ))}
               </div>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-sm font-semibold text-gray-900">Leaderboard</p>
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-sm font-semibold text-sand">Leaderboard</p>
               <div className="mt-4">
                 {data.leaderboard.length === 0 ? (
                   <EmptyState

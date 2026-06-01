@@ -44,8 +44,8 @@ export default function AdminPointsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-gray-200 bg-white p-6">
-        <h2 className="text-lg font-semibold text-gray-900">Add or deduct points</h2>
+      <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <h2 className="text-lg font-semibold text-sand">Add or deduct points</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -83,14 +83,14 @@ export default function AdminPointsPage() {
           }}
         >
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="platoon">
+            <label className="text-xs font-medium text-muted" htmlFor="platoon">
               Platoon
             </label>
             <select
               id="platoon"
               value={platoon}
               onChange={(event) => setPlatoon(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="P1">P1</option>
               <option value="P2">P2</option>
@@ -99,7 +99,7 @@ export default function AdminPointsPage() {
             </select>
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="cadet">
+            <label className="text-xs font-medium text-muted" htmlFor="cadet">
               Cadet
             </label>
             <select
@@ -108,7 +108,7 @@ export default function AdminPointsPage() {
               onChange={(event) =>
                 setCadetId(event.target.value ? Number(event.target.value) : "")
               }
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
             >
               <option value="">{cadets.length === 0 ? "No cadets in platoon" : "Select cadet"}</option>
@@ -120,14 +120,14 @@ export default function AdminPointsPage() {
             </select>
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="category">
+            <label className="text-xs font-medium text-muted" htmlFor="category">
               Category
             </label>
             <select
               id="category"
               value={category}
               onChange={(event) => setCategory(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
             >
               {categories.map((value) => (
                 <option key={value} value={value}>
@@ -137,7 +137,7 @@ export default function AdminPointsPage() {
             </select>
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="points">
+            <label className="text-xs font-medium text-muted" htmlFor="points">
               Points (use negative for deductions)
             </label>
             <input
@@ -145,32 +145,32 @@ export default function AdminPointsPage() {
               type="number"
               value={points}
               onChange={(event) => setPoints(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="reason">
+            <label className="text-xs font-medium text-muted" htmlFor="reason">
               Reason
             </label>
             <input
               id="reason"
               value={reason}
               onChange={(event) => setReason(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
               maxLength={500}
             />
           </div>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="awardedBy">
+            <label className="text-xs font-medium text-muted" htmlFor="awardedBy">
               Awarded by
             </label>
             <input
               id="awardedBy"
               value={awardedBy}
               onChange={(event) => setAwardedBy(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-gray-200 px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
               required
               maxLength={100}
             />
@@ -178,7 +178,7 @@ export default function AdminPointsPage() {
           {message ? (
             <p
               className={`text-sm ${
-                message.kind === "ok" ? "text-green-600" : "text-red-600"
+                message.kind === "ok" ? "text-olive-light" : "text-red-400"
               }`}
             >
               {message.text}
@@ -187,7 +187,7 @@ export default function AdminPointsPage() {
           <button
             type="submit"
             disabled={loading}
-            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700 disabled:opacity-60"
+            className="rounded-lg bg-olive px-4 py-2 text-sm font-semibold text-matte hover:bg-olive-dark disabled:opacity-60"
           >
             {loading ? "Saving..." : "Save"}
           </button>

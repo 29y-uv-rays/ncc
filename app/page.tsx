@@ -15,8 +15,8 @@ export default function Home() {
     <>
       <SiteHeader />
       <PageShell title="Dashboard" subtitle="RINCC Cadet Points System">
-        <div className="rounded-xl border border-gray-200 bg-white p-6">
-          <p className="text-sm font-normal text-gray-600">
+        <div className="rounded-xl border border-dark-border bg-surface p-6">
+          <p className="text-sm font-normal text-muted">
             Send your videos to your Platoon Sergeant via WhatsApp or Teams with your name.
           </p>
         </div>
@@ -25,11 +25,11 @@ export default function Home() {
             <Link
               key={card.href}
               href={card.href}
-              className="rounded-xl border border-gray-200 bg-white p-6 transition-colors hover:border-gray-300"
+              className="rounded-xl border border-dark-border bg-surface p-6 transition-colors hover:border-hover-border"
             >
-              <p className="text-xs font-medium text-gray-500">Navigate</p>
-              <h2 className="text-lg font-semibold text-gray-900 mt-1">{card.title}</h2>
-              <p className="text-sm font-normal text-gray-600 mt-2">{card.description}</p>
+              <p className="text-xs font-medium text-muted">Navigate</p>
+              <h2 className="text-lg font-semibold text-sand mt-1">{card.title}</h2>
+              <p className="text-sm font-normal text-muted mt-2">{card.description}</p>
             </Link>
           ))}
         </div>

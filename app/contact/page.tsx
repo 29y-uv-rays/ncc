@@ -56,30 +56,30 @@ export default function ContactPage() {
         {error ? <ErrorBanner error={error} /> : null}
         {!loading && !error && data ? (
           <div className="grid gap-4">
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-sm font-semibold text-gray-900">Teachers-in-Charge</p>
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-sm font-semibold text-sand">Teachers-in-Charge</p>
               <div className="mt-4 space-y-2">
                 {data.teachers.length === 0 ? (
                   <EmptyState title="No teachers listed." />
                 ) : (
                   data.teachers.map((teacher) => (
-                    <div key={teacher.email} className="text-sm text-gray-600">
-                      <p className="font-semibold text-gray-900">{teacher.name}</p>
+                    <div key={teacher.email} className="text-sm text-muted">
+                      <p className="font-semibold text-sand">{teacher.name}</p>
                       <p>{teacher.email}</p>
                     </div>
                   ))
                 )}
               </div>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-sm font-semibold text-gray-900">EXCO</p>
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-sm font-semibold text-sand">EXCO</p>
               <div className="mt-4 space-y-2">
                 {data.exco.length === 0 ? (
                   <EmptyState title="No EXCO listed." />
                 ) : (
                   data.exco.map((member) => (
-                    <div key={member.role} className="text-sm text-gray-600">
-                      <p className="font-semibold text-gray-900">
+                    <div key={member.role} className="text-sm text-muted">
+                      <p className="font-semibold text-sand">
                         {member.role} · {member.name}
                       </p>
                       <p>{member.phone}</p>

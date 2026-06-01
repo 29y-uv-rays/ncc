@@ -72,26 +72,26 @@ export default function CadetPage({
         {error ? <ErrorBanner error={error} /> : null}
         {!loading && !error && data ? (
           <>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-xs font-medium text-gray-500">Cadet</p>
-              <h2 className="text-xl font-semibold text-gray-900 mt-1">{data.cadet.name}</h2>
-              <p className="text-sm font-normal text-gray-600 mt-2">
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-xs font-medium text-muted">Cadet</p>
+              <h2 className="text-xl font-semibold text-sand mt-1">{data.cadet.name}</h2>
+              <p className="text-sm font-normal text-muted mt-2">
                 {formatPlatoonLabel(data.cadet.platoon)} · Total points {data.cadet.total_points}
               </p>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-sm font-semibold text-gray-900">Category breakdown</p>
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-sm font-semibold text-sand">Category breakdown</p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {categoryRows.map((row) => (
-                  <div key={row.label} className="rounded-lg border border-gray-200 p-3">
-                    <p className="text-xs font-medium text-gray-500">{row.label}</p>
-                    <p className="text-lg font-semibold text-gray-900">{row.value}</p>
+                  <div key={row.label} className="rounded-lg border border-dark-border p-3">
+                    <p className="text-xs font-medium text-muted">{row.label}</p>
+                    <p className="text-lg font-semibold text-sand">{row.value}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="rounded-xl border border-gray-200 bg-white p-6">
-              <p className="text-sm font-semibold text-gray-900">Points history</p>
+            <div className="rounded-xl border border-dark-border bg-surface p-6">
+              <p className="text-sm font-semibold text-sand">Points history</p>
               <div className="mt-4 space-y-3">
                 {data.history.length === 0 ? (
                   <EmptyState
@@ -102,23 +102,23 @@ export default function CadetPage({
                   data.history.map((entry, index) => (
                     <div
                       key={`${entry.created_at}-${index}`}
-                      className="border-b border-gray-200 pb-3 last:border-b-0"
+                      className="border-b border-dark-border pb-3 last:border-b-0"
                     >
                       <div className="flex items-center justify-between">
                         <span
                           className={`text-sm font-semibold ${
-                            entry.points >= 0 ? "text-green-600" : "text-red-600"
+                            entry.points >= 0 ? "text-olive-light" : "text-red-400"
                           }`}
                         >
                           {entry.points >= 0 ? "+" : ""}
                           {entry.points}
                         </span>
-                        <span className="text-xs font-medium text-gray-500">
+                        <span className="text-xs font-medium text-muted">
                           {new Date(entry.created_at).toLocaleString()}
                         </span>
                       </div>
-                      <p className="text-sm font-normal text-gray-600 mt-1">{entry.reason}</p>
-                      <p className="text-xs font-medium text-gray-500 mt-1">
+                      <p className="text-sm font-normal text-muted mt-1">{entry.reason}</p>
+                      <p className="text-xs font-medium text-dim mt-1">
                         Awarded by {entry.awarded_by}
                       </p>
                     </div>

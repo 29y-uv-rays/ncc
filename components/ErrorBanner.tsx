@@ -13,9 +13,9 @@ export function getErrorMessage(error: unknown, fallback = "Something went wrong
 
 export default function ErrorBanner({ error }: ErrorBannerProps) {
   return (
-    <div className="rounded-xl border border-red-200 bg-red-50 p-6">
-      <p className="text-xs font-medium text-red-700">Error</p>
-      <p className="text-sm font-normal text-red-700 mt-1">
+    <div className="rounded-xl border border-red-800/40 bg-red-900/20 p-6">
+      <p className="text-xs font-medium text-red-400">Error</p>
+      <p className="text-sm font-normal text-red-400 mt-1">
         {getErrorMessage(error)}
       </p>
     </div>

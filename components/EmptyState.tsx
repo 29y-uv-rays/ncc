@@ -8,10 +8,10 @@ export default function EmptyState({
   description,
 }: EmptyStateProps) {
   return (
-    <div className="rounded-xl border border-gray-200 bg-white p-6 text-center">
-      <p className="text-sm font-semibold text-gray-900">{title}</p>
+    <div className="rounded-xl border border-dark-border bg-surface p-6 text-center">
+      <p className="text-sm font-semibold text-sand">{title}</p>
       {description ? (
-        <p className="text-sm font-normal text-gray-600 mt-1">{description}</p>
+        <p className="text-sm font-normal text-muted mt-1">{description}</p>
       ) : null}
     </div>
   );

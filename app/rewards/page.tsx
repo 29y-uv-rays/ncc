@@ -53,12 +53,12 @@ export default function RewardsPage() {
     <>
       <SiteHeader />
       <PageShell title="Rewards" subtitle="Track progress toward rewards.">
-        <div className="rounded-xl border border-gray-200 bg-white p-6 space-y-4">
-          <p className="text-sm font-normal text-gray-600">
+        <div className="rounded-xl border border-dark-border bg-surface p-6 space-y-4">
+          <p className="text-sm font-normal text-muted">
             Rewards are handled manually by EXCO.
           </p>
           <div>
-            <label className="text-xs font-medium text-gray-500" htmlFor="cadet">
+            <label className="text-xs font-medium text-muted" htmlFor="cadet">
               Select cadet
             </label>
             <select
@@ -67,7 +67,7 @@ export default function RewardsPage() {
               onChange={(event) =>
                 setSelectedCadetId(event.target.value ? Number(event.target.value) : "")
               }
-              className="mt-1 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="">Choose a cadet</option>
               {cadets.map((cadet) => (
@@ -89,15 +89,15 @@ export default function RewardsPage() {
               />
             ) : (
               rewards.map((reward) => (
-                <div key={reward.id} className="rounded-xl border border-gray-200 bg-white p-6">
+                <div key={reward.id} className="rounded-xl border border-dark-border bg-surface p-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <p className="text-xs font-medium text-gray-500">Reward</p>
-                      <h3 className="text-base font-semibold text-gray-900">
+                      <p className="text-xs font-medium text-muted">Reward</p>
+                      <h3 className="text-base font-semibold text-sand">
                         {reward.name}
                       </h3>
                     </div>
-                    <span className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs text-gray-700">
+                    <span className="rounded-full border border-dark-border bg-surface px-3 py-1 text-xs text-coyote-light">
                       {reward.points_required} pts
                     </span>
                   </div>
@@ -107,7 +107,7 @@ export default function RewardsPage() {
                       max={reward.points_required}
                     />
                     {selectedCadet ? (
-                      <p className="text-xs font-medium text-gray-500 mt-2">
+                      <p className="text-xs font-medium text-muted mt-2">
                         {Math.min(selectedCadet.total_points, reward.points_required)} / {reward.points_required} points
                       </p>
                     ) : null}
