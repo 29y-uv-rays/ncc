@@ -28,8 +28,8 @@ export default function AdminCadetsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">Add cadet</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">Add cadet</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -63,7 +63,7 @@ export default function AdminCadetsPage() {
               id="cadetName"
               value={name}
               onChange={(event) => setName(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
@@ -75,7 +75,7 @@ export default function AdminCadetsPage() {
               id="cadetPlatoon"
               value={platoon}
               onChange={(event) => setPlatoon(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="P1">P1</option>
               <option value="P2">P2</option>
@@ -92,11 +92,11 @@ export default function AdminCadetsPage() {
           </button>
         </form>
       </div>
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">All cadets</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">All cadets</h2>
         <div className="mt-4 space-y-2">
           {cadets.map((cadet) => (
-            <div key={cadet.id} className="flex items-center justify-between border-b border-dark-border py-2">
+            <div key={cadet.id} className="flex items-center justify-between border-b border-olive/30 py-2">
               <div>
                 <p className="text-sm font-semibold text-sand">{cadet.name}</p>
                 <p className="text-xs font-medium text-muted">{cadet.platoon}</p>

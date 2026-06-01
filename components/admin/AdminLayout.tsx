@@ -64,11 +64,11 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
 
   return (
     <div className="min-h-screen bg-matte">
-      <header className="border-b border-dark-border">
+      <header className="border-b border-olive/40 bg-surface">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
           <div>
             <p className="text-xs font-medium text-muted">Admin</p>
-            <h1 className="text-base font-semibold text-sand">RINCC Control</h1>
+            <h1 className="text-base font-semibold text-olive-light">RINCC Control</h1>
           </div>
           <form
             onSubmit={async (event) => {
@@ -82,7 +82,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
           >
             <button
               type="submit"
-              className="rounded-full border border-dark-border px-3 py-1 text-xs font-medium text-coyote-light"
+              className="rounded-full border border-olive/30 bg-olive/5 px-3 py-1 text-xs font-medium text-olive-light hover:bg-olive/10"
             >
               Sign out
             </button>
@@ -99,8 +99,8 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
                 href={item.href}
                 className={`block rounded-lg border px-3 py-2 text-sm ${
                   active
-                    ? "border-olive text-olive-light"
-                    : "border-dark-border text-muted hover:border-hover-border"
+                    ? "border-olive bg-olive/10 text-olive-light"
+                    : "border-olive/20 text-muted hover:border-olive/40 hover:text-olive-light"
                 }`}
               >
                 {item.label}

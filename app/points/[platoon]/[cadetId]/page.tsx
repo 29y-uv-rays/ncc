@@ -72,26 +72,26 @@ export default function CadetPage({
         {error ? <ErrorBanner error={error} /> : null}
         {!loading && !error && data ? (
           <>
-            <div className="rounded-xl border border-dark-border bg-surface p-6">
+            <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
               <p className="text-xs font-medium text-muted">Cadet</p>
-              <h2 className="text-xl font-semibold text-sand mt-1">{data.cadet.name}</h2>
+              <h2 className="text-xl font-semibold text-olive-light mt-1">{data.cadet.name}</h2>
               <p className="text-sm font-normal text-muted mt-2">
                 {formatPlatoonLabel(data.cadet.platoon)} · Total points {data.cadet.total_points}
               </p>
             </div>
-            <div className="rounded-xl border border-dark-border bg-surface p-6">
-              <p className="text-sm font-semibold text-sand">Category breakdown</p>
+            <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+              <p className="text-sm font-semibold text-olive-light">Category breakdown</p>
               <div className="mt-4 grid gap-3 sm:grid-cols-2">
                 {categoryRows.map((row) => (
-                  <div key={row.label} className="rounded-lg border border-dark-border p-3">
+                  <div key={row.label} className="rounded-lg border border-olive/30 bg-olive/5 p-3">
                     <p className="text-xs font-medium text-muted">{row.label}</p>
-                    <p className="text-lg font-semibold text-sand">{row.value}</p>
+                    <p className="text-lg font-semibold text-olive-light">{row.value}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="rounded-xl border border-dark-border bg-surface p-6">
-              <p className="text-sm font-semibold text-sand">Points history</p>
+            <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+              <p className="text-sm font-semibold text-olive-light">Points history</p>
               <div className="mt-4 space-y-3">
                 {data.history.length === 0 ? (
                   <EmptyState
@@ -102,7 +102,7 @@ export default function CadetPage({
                   data.history.map((entry, index) => (
                     <div
                       key={`${entry.created_at}-${index}`}
-                      className="border-b border-dark-border pb-3 last:border-b-0"
+                      className="border-b border-olive/20 pb-3 last:border-b-0"
                     >
                       <div className="flex items-center justify-between">
                         <span

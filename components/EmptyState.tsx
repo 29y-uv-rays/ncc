@@ -8,7 +8,7 @@ export default function EmptyState({
   description,
 }: EmptyStateProps) {
   return (
-    <div className="rounded-xl border border-dark-border bg-surface p-6 text-center">
+    <div className="rounded-xl border border-olive/20 bg-olive/5 p-6 text-center">
       <p className="text-sm font-semibold text-sand">{title}</p>
       {description ? (
         <p className="text-sm font-normal text-muted mt-1">{description}</p>

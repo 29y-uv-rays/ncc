@@ -16,20 +16,20 @@ export default function PlatoonCard({
   return (
     <Link
       href={`/points/${platoonCode}`}
-      className="rounded-xl border border-dark-border bg-surface p-6 transition-colors hover:border-hover-border"
+      className="rounded-xl border border-olive/30 bg-olive/5 p-6 transition-colors hover:border-olive/60 hover:bg-olive/10"
     >
       <div className="flex items-center justify-between">
         <div>
           <p className="text-xs font-medium text-muted">Platoon</p>
           <h3 className="text-lg font-semibold text-sand">{label}</h3>
         </div>
-        <span className="rounded-full border border-dark-border bg-surface px-3 py-1 text-xs text-coyote-light">
+        <span className="rounded-full border border-olive/40 bg-olive/15 px-3 py-1 text-xs text-olive-light">
           {cadetCount} cadets
         </span>
       </div>
       <div className="mt-4">
         <p className="text-xs font-medium text-muted">Total points</p>
-        <p className="text-2xl font-semibold text-sand">{points}</p>
+        <p className="text-2xl font-semibold text-olive-light">{points}</p>
       </div>
     </Link>
   );

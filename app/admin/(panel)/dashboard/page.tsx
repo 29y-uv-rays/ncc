@@ -56,9 +56,9 @@ export default function AdminDashboardPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
         <p className="text-xs font-medium text-muted">Overview</p>
-        <h2 className="text-lg font-semibold text-sand mt-1">Admin dashboard</h2>
+        <h2 className="text-lg font-semibold text-olive-light mt-1">Admin dashboard</h2>
         <p className="text-sm font-normal text-muted mt-2">
           Use the left navigation to manage cadets, points, rewards, notes, contact data, and
           platoon stats.
@@ -79,9 +79,9 @@ export default function AdminDashboardPage() {
 
 function Stat({ label, value }: { label: string; value: number }) {
   return (
-    <div className="rounded-xl border border-dark-border bg-surface p-6">
+    <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
       <p className="text-xs font-medium text-muted">{label}</p>
-      <p className="text-2xl font-semibold text-sand mt-1">{value}</p>
+      <p className="text-2xl font-semibold text-olive-light mt-1">{value}</p>
     </div>
   );
 }

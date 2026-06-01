@@ -53,7 +53,7 @@ export default function RewardsPage() {
     <>
       <SiteHeader />
       <PageShell title="Rewards" subtitle="Track progress toward rewards.">
-        <div className="rounded-xl border border-dark-border bg-surface p-6 space-y-4">
+        <div className="rounded-xl border border-olive/30 bg-olive/5 p-6 space-y-4">
           <p className="text-sm font-normal text-muted">
             Rewards are handled manually by EXCO.
           </p>
@@ -67,7 +67,7 @@ export default function RewardsPage() {
               onChange={(event) =>
                 setSelectedCadetId(event.target.value ? Number(event.target.value) : "")
               }
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="">Choose a cadet</option>
               {cadets.map((cadet) => (
@@ -89,15 +89,15 @@ export default function RewardsPage() {
               />
             ) : (
               rewards.map((reward) => (
-                <div key={reward.id} className="rounded-xl border border-dark-border bg-surface p-6">
+                <div key={reward.id} className="rounded-xl border border-olive/30 bg-olive/5 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <p className="text-xs font-medium text-muted">Reward</p>
-                      <h3 className="text-base font-semibold text-sand">
+                      <h3 className="text-base font-semibold text-olive-light">
                         {reward.name}
                       </h3>
                     </div>
-                    <span className="rounded-full border border-dark-border bg-surface px-3 py-1 text-xs text-coyote-light">
+                    <span className="rounded-full border border-olive/40 bg-olive/15 px-3 py-1 text-xs text-olive-light">
                       {reward.points_required} pts
                     </span>
                   </div>

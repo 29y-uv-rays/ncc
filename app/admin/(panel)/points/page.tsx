@@ -44,8 +44,8 @@ export default function AdminPointsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">Add or deduct points</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">Add or deduct points</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -90,7 +90,7 @@ export default function AdminPointsPage() {
               id="platoon"
               value={platoon}
               onChange={(event) => setPlatoon(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="P1">P1</option>
               <option value="P2">P2</option>
@@ -108,7 +108,7 @@ export default function AdminPointsPage() {
               onChange={(event) =>
                 setCadetId(event.target.value ? Number(event.target.value) : "")
               }
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
             >
               <option value="">{cadets.length === 0 ? "No cadets in platoon" : "Select cadet"}</option>
@@ -127,7 +127,7 @@ export default function AdminPointsPage() {
               id="category"
               value={category}
               onChange={(event) => setCategory(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
             >
               {categories.map((value) => (
                 <option key={value} value={value}>
@@ -145,7 +145,7 @@ export default function AdminPointsPage() {
               type="number"
               value={points}
               onChange={(event) => setPoints(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
@@ -157,7 +157,7 @@ export default function AdminPointsPage() {
               id="reason"
               value={reason}
               onChange={(event) => setReason(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
               maxLength={500}
             />
@@ -170,7 +170,7 @@ export default function AdminPointsPage() {
               id="awardedBy"
               value={awardedBy}
               onChange={(event) => setAwardedBy(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
               maxLength={100}
             />

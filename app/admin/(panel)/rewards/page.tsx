@@ -31,8 +31,8 @@ export default function AdminRewardsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">Create reward</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">Create reward</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -74,7 +74,7 @@ export default function AdminRewardsPage() {
               id="rewardName"
               value={name}
               onChange={(event) => setName(event.target.value)}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
@@ -87,7 +87,7 @@ export default function AdminRewardsPage() {
               type="number"
               value={pointsRequired}
               onChange={(event) => setPointsRequired(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
               required
             />
           </div>
@@ -100,7 +100,7 @@ export default function AdminRewardsPage() {
               type="number"
               value={sortOrder}
               onChange={(event) => setSortOrder(Number(event.target.value))}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
             />
           </div>
           <div>
@@ -111,7 +111,7 @@ export default function AdminRewardsPage() {
               id="active"
               value={active ? "active" : "hidden"}
               onChange={(event) => setActive(event.target.value === "active")}
-              className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+              className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
             >
               <option value="active">Active</option>
               <option value="hidden">Hidden</option>
@@ -126,11 +126,11 @@ export default function AdminRewardsPage() {
           </button>
         </form>
       </div>
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">Existing rewards</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">Existing rewards</h2>
         <div className="mt-4 space-y-3">
           {rewards.map((reward) => (
-            <div key={reward.id} className="rounded-lg border border-dark-border p-4">
+            <div key={reward.id} className="rounded-lg border border-olive/30 p-4">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm font-semibold text-sand">{reward.name}</p>

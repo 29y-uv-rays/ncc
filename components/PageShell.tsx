@@ -11,7 +11,7 @@ export default function PageShell({ title, subtitle, children }: PageShellProps)
     <main className="flex-1 px-4 pb-12 pt-6 sm:px-6 lg:px-8">
       <div className="mx-auto w-full max-w-5xl">
         <div className="space-y-1">
-          <h1 className="text-3xl font-semibold tracking-tight text-sand">
+          <h1 className="text-3xl font-semibold tracking-tight text-olive-light">
             {title}
           </h1>
           {subtitle ? (

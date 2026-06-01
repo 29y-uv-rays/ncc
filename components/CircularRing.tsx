@@ -11,7 +11,7 @@ export default function CircularRing({ value, label }: CircularRingProps) {
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <svg width="48" height="48" className="text-dark-border">
+      <svg width="48" height="48" className="text-olive-dim/50">
         <circle
           cx="24"
           cy="24"
@@ -25,7 +25,7 @@ export default function CircularRing({ value, label }: CircularRingProps) {
           cy="24"
           r={radius}
           fill="none"
-          stroke="#81613C"
+          stroke="#6B8E23"
           strokeWidth="3"
           strokeDasharray={circumference}
           strokeDashoffset={offset}

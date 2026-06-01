@@ -64,16 +64,16 @@ export default function RoadmapPage() {
             {stats.map((stat) => (
               <div
                 key={stat.platoon}
-                className="rounded-xl border border-dark-border bg-surface p-6"
+                className="rounded-xl border border-olive/30 bg-olive/5 p-6"
               >
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-xs font-medium text-muted">Platoon</p>
-                    <h3 className="text-lg font-semibold text-sand">
+                    <h3 className="text-lg font-semibold text-olive-light">
                       {formatPlatoonLabel(stat.platoon)}
                     </h3>
                   </div>
-                  <span className="rounded-full border border-dark-border bg-surface px-3 py-1 text-xs text-coyote-light">
+                  <span className="rounded-full border border-olive/40 bg-olive/15 px-3 py-1 text-xs text-olive-light">
                     {stat.volunteer_count} volunteers
                   </span>
                 </div>

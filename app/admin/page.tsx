@@ -26,9 +26,9 @@ export default function AdminLoginPage() {
   return (
     <div className="min-h-screen bg-matte">
       <div className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-4">
-        <div className="rounded-xl border border-dark-border bg-surface p-6">
+        <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
           <p className="text-xs font-medium text-muted">Admin</p>
-          <h1 className="text-2xl font-semibold text-sand mt-1">Sign in</h1>
+          <h1 className="text-2xl font-semibold text-olive-light mt-1">Sign in</h1>
           <p className="text-sm font-normal text-muted mt-2">
             Access is limited to EXCO administrators.
           </p>
@@ -66,7 +66,7 @@ export default function AdminLoginPage() {
                 type="password"
                 value={password}
                 onChange={(event) => setPassword(event.target.value)}
-                className="mt-1 w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+                className="mt-1 w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
                 placeholder="Admin password"
                 required
                 autoComplete="current-password"

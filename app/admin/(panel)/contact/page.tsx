@@ -15,8 +15,8 @@ export default function AdminContactPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">Edit contact JSON</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">Edit contact JSON</h2>
         <form
           className="mt-4 grid gap-4"
           onSubmit={async (event) => {
@@ -45,7 +45,7 @@ export default function AdminContactPage() {
             value={value}
             onChange={(event) => setValue(event.target.value)}
             rows={14}
-            className="w-full rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm font-mono text-sand"
+            className="w-full rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm font-mono text-sand"
           />
           {message ? <p className="text-sm text-muted">{message}</p> : null}
           <button

@@ -63,8 +63,8 @@ export default function PointsPage() {
     <>
       <SiteHeader />
       <PageShell title="Points" subtitle="Leaderboard and platoon overview.">
-        <div className="rounded-xl border border-dark-border bg-surface">
-          <div className="border-b border-dark-border px-6">
+        <div className="rounded-xl border border-olive/30 bg-olive/5">
+          <div className="border-b border-olive/30 px-6">
             <div className="flex gap-6">
               {tabs.map((tab) => {
                 const active = activeTab === tab.id;
@@ -75,8 +75,8 @@ export default function PointsPage() {
                     onClick={() => setActiveTab(tab.id)}
                     className={`pb-3 text-sm ${
                       active
-                        ? "text-sand font-medium border-b-2 border-olive -mb-[1px]"
-                        : "text-muted font-normal border-b-2 border-transparent hover:text-coyote-light"
+                        ? "text-olive-light font-medium border-b-2 border-olive -mb-[1px]"
+                        : "text-muted font-normal border-b-2 border-transparent hover:text-olive-light"
                     }`}
                   >
                     {tab.label}

@@ -8,7 +8,7 @@ interface PillProps {
 export function OutlinePill({ children, className = "" }: PillProps) {
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full border border-dark-border bg-surface px-3 py-1 text-xs text-coyote-light ${className}`}
+      className={`inline-flex items-center gap-1.5 rounded-full border border-olive/30 bg-olive/5 px-3 py-1 text-xs text-olive-light ${className}`}
     >
       {children}
     </span>

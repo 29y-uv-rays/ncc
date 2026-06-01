@@ -13,7 +13,7 @@ export default function ProgressBar({ value, max }: ProgressBarProps) {
         <span>Progress</span>
         <span>{percent}%</span>
       </div>
-      <div className="h-2 w-full rounded-full bg-dark-border">
+      <div className="h-2 w-full rounded-full bg-olive-dim/50">
         <div
           className="h-2 rounded-full bg-olive"
           style={{ width: `${percent}%` }}

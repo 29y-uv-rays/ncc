@@ -10,13 +10,13 @@ const navItems = [
 
 export default function SiteHeader() {
   return (
-    <header className="border-b border-dark-border bg-surface">
+    <header className="border-b border-olive/40 bg-surface">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-4 px-4 py-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-base font-semibold text-sand">
+          <Link href="/" className="text-base font-semibold text-olive-light">
             RINCC Cadet Points
           </Link>
-          <span className="inline-flex items-center gap-2 rounded-full border border-dark-border bg-surface px-3 py-1 text-xs font-medium text-coyote-light">
+          <span className="inline-flex items-center gap-2 rounded-full border border-olive/40 bg-olive/10 px-3 py-1 text-xs font-medium text-olive-light">
             <span className="h-1.5 w-1.5 rounded-full bg-olive" />
             NCC Portal
           </span>
@@ -26,7 +26,7 @@ export default function SiteHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="rounded-full border border-dark-border bg-surface px-3 py-1 text-coyote-light transition-colors hover:border-hover-border"
+              className="rounded-full border border-olive/30 bg-olive/5 px-3 py-1 text-olive-light transition-colors hover:border-olive/60 hover:bg-olive/10"
             >
               {item.label}
             </Link>

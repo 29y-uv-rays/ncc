@@ -49,15 +49,15 @@ export default function AdminPlatoonStatsPage() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-dark-border bg-surface p-6">
-        <h2 className="text-lg font-semibold text-sand">Platoon stats</h2>
+      <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+        <h2 className="text-lg font-semibold text-olive-light">Platoon stats</h2>
         <p className="text-sm font-normal text-muted mt-2">
           Update the platoon roadmap and readiness percentages.
         </p>
         {message ? <p className="text-sm text-muted mt-3">{message}</p> : null}
         <div className="mt-4 space-y-4">
           {stats.map((stat, index) => (
-            <div key={stat.platoon} className="rounded-lg border border-dark-border p-4">
+            <div key={stat.platoon} className="rounded-lg border border-olive/30 p-4">
               <p className="text-sm font-semibold text-sand">{stat.platoon}</p>
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
                 <input
@@ -71,7 +71,7 @@ export default function AdminPlatoonStatsPage() {
                     };
                     setStats(next);
                   }}
-                  className="rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
                   placeholder="Roadmap %"
                 />
                 <input
@@ -85,7 +85,7 @@ export default function AdminPlatoonStatsPage() {
                     };
                     setStats(next);
                   }}
-                  className="rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
                   placeholder="Drills %"
                 />
                 <input
@@ -99,7 +99,7 @@ export default function AdminPlatoonStatsPage() {
                     };
                     setStats(next);
                   }}
-                  className="rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
                   placeholder="PT %"
                 />
                 <input
@@ -113,7 +113,7 @@ export default function AdminPlatoonStatsPage() {
                     };
                     setStats(next);
                   }}
-                  className="rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
                   placeholder="IFC %"
                 />
                 <input
@@ -127,7 +127,7 @@ export default function AdminPlatoonStatsPage() {
                     };
                     setStats(next);
                   }}
-                  className="rounded-lg border border-dark-border bg-matte px-3 py-2 text-sm text-sand"
+                  className="rounded-lg border border-olive/30 bg-matte px-3 py-2 text-sm text-sand"
                   placeholder="Volunteers"
                 />
               </div>

@@ -35,7 +35,7 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
   const [open, setOpen] = useState(level === 0);
 
   return (
-    <div className="rounded-xl border border-dark-border bg-surface">
+    <div className="rounded-xl border border-olive/30 bg-olive/5">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
@@ -43,7 +43,7 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
       >
         <div>
           <p className="text-xs font-medium text-muted">Section</p>
-          <h3 className="text-base font-semibold text-sand">{section.title}</h3>
+          <h3 className="text-base font-semibold text-olive-light">{section.title}</h3>
           {section.metadata ? (
             <p className="text-xs font-medium text-muted mt-1">
               {section.metadata}
@@ -53,7 +53,7 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
         <span className="text-dim">{open ? "˅" : ">"}</span>
       </button>
       {open ? (
-        <div className="border-t border-dark-border px-6 py-4 space-y-4">
+        <div className="border-t border-olive/30 px-6 py-4 space-y-4">
           {section.content?.map((paragraph) => (
             <p key={paragraph} className="text-sm font-normal text-muted">
               {paragraph}
@@ -71,11 +71,11 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
           ) : null}
           {section.table ? (
             <div className="overflow-x-auto">
-              <table className="min-w-full border border-dark-border text-left text-sm text-muted">
-                <thead className="bg-dark-border/50 text-xs font-medium text-muted">
+              <table className="min-w-full border border-olive/30 text-left text-sm text-muted">
+                <thead className="bg-olive-dim/30 text-xs font-medium text-muted">
                   <tr>
                     {section.table.headers.map((header) => (
-                      <th key={header} className="px-3 py-2 border-b border-dark-border">
+                      <th key={header} className="px-3 py-2 border-b border-olive/30">
                         {header}
                       </th>
                     ))}
@@ -87,7 +87,7 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
                       {row.map((cell, cellIndex) => (
                         <td
                           key={`${section.id}-cell-${rowIndex}-${cellIndex}`}
-                          className="px-3 py-2 border-b border-dark-border"
+                          className="px-3 py-2 border-b border-olive/30"
                         >
                           {cell}
                         </td>
@@ -106,9 +106,9 @@ function Section({ section, level }: { section: NotesSection; level: number }) {
                   href={link.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-xl border border-dark-border bg-surface p-4 transition-colors hover:border-hover-border"
+                  className="rounded-xl border border-olive/30 bg-olive/5 p-4 transition-colors hover:border-olive/60 hover:bg-olive/10"
                 >
-                  <p className="text-sm font-semibold text-sand">{link.title}</p>
+                  <p className="text-sm font-semibold text-olive-light">{link.title}</p>
                   <p className="text-xs font-medium text-muted">{link.description}</p>
                 </a>
               ))}

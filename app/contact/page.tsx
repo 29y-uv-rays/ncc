@@ -56,8 +56,8 @@ export default function ContactPage() {
         {error ? <ErrorBanner error={error} /> : null}
         {!loading && !error && data ? (
           <div className="grid gap-4">
-            <div className="rounded-xl border border-dark-border bg-surface p-6">
-              <p className="text-sm font-semibold text-sand">Teachers-in-Charge</p>
+            <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+              <p className="text-sm font-semibold text-olive-light">Teachers-in-Charge</p>
               <div className="mt-4 space-y-2">
                 {data.teachers.length === 0 ? (
                   <EmptyState title="No teachers listed." />
@@ -71,8 +71,8 @@ export default function ContactPage() {
                 )}
               </div>
             </div>
-            <div className="rounded-xl border border-dark-border bg-surface p-6">
-              <p className="text-sm font-semibold text-sand">EXCO</p>
+            <div className="rounded-xl border border-olive/30 bg-olive/5 p-6">
+              <p className="text-sm font-semibold text-olive-light">EXCO</p>
               <div className="mt-4 space-y-2">
                 {data.exco.length === 0 ? (
                   <EmptyState title="No EXCO listed." />
