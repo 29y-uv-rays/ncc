@@ -23,7 +23,12 @@ In the Supabase dashboard, open the **SQL Editor** and run the contents of:
 - `db/migrations/supabase_init.sql` -- creates tables, indexes, and RLS policies
 - `db/seed.sql` -- inserts the initial admin password, contact data, and platoon stats
 
-For the full notes JSON, paste `db/notes.json` into the `content` table (type = `notes`) via the Supabase dashboard, or use the admin panel after first login.
+For the full notes JSON, paste `db/notes.json` into the `content` table (type = `notes`) via the Supabase dashboard, or use the admin panel after first login. You can also regenerate it from the source-of-truth at `db/notes.source.json` and push it via:
+
+```bash
+npm run notes:build   # rebuild db/notes.json
+npm run notes:load    # upsert into Supabase (uses env vars from .env)
+```
 
 ### 3. Local environment
 

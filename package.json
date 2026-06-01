@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "notes:build": "node scripts/build-notes.mjs",
+    "notes:load": "node --env-file=.env scripts/load-notes.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.3",

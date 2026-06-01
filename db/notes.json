@@ -1,0 +1,456 @@
+{
+  "title": "National Cadet Corps Notes",
+  "subtitle": "Support understanding of NCC concepts for Specialist Assessment and cadet leadership.",
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "content": [
+        "Support understanding of NCC concepts for Specialist Assessment and cadet leadership."
+      ],
+      "subsections": [
+        {
+          "id": "specialist-assessment",
+          "title": "Specialist Assessment",
+          "metadata": "Required for Y3 Cadets · Promotes to 3rd Sergeant",
+          "table": {
+            "headers": [
+              "Component",
+              "Weightage",
+              "Details"
+            ],
+            "rows": [
+              [
+                "Physical Training",
+                "50",
+                "25 pushups in 1 min / 30 situps in 1 min / 2.4km run"
+              ],
+              [
+                "General Specialist Knowledge",
+                "50",
+                "NCC & SAF knowledge / Safety / SAR-21 / Navigation / IFC theory quiz"
+              ],
+              [
+                "Individual Field Craft",
+                "100",
+                "Field signals / Judging distances / Movement by day / Target indication"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "physical-training",
+      "title": "Physical Training",
+      "content": [
+        "Cadet Strong: Resilient mind, fit body, committed heart"
+      ],
+      "items": [
+        "Builds discipline, perseverance, mental fitness",
+        "Maintains health",
+        "Cadet leadership example",
+        "Supports 'cadet strong' concept"
+      ],
+      "subsections": [
+        {
+          "id": "expected-standards",
+          "title": "Expected Standards",
+          "table": {
+            "headers": [
+              "Year",
+              "Pushups",
+              "Situps",
+              "Plank (s)",
+              "Running"
+            ],
+            "rows": [
+              [
+                "Y1",
+                "5",
+                "20",
+                "45",
+                "2 min/round"
+              ],
+              [
+                "Y2",
+                "15",
+                "25",
+                "60",
+                "1.5 min/round"
+              ],
+              [
+                "Y3",
+                "25",
+                "30",
+                "75",
+                "1.25 min/round"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "training-notes",
+          "title": "Training Notes",
+          "items": [
+            "Form over speed",
+            "Progressive overload recommended",
+            "Train outside CCA required",
+            "Avoid overexertion"
+          ]
+        },
+        {
+          "id": "exercises",
+          "title": "Exercises",
+          "subsections": [
+            {
+              "id": "exercise-pushups",
+              "title": "Pushups",
+              "subsections": [
+                {
+                  "id": "pushups-form",
+                  "title": "Form",
+                  "items": [
+                    "Hands slightly wider than shoulders",
+                    "Body straight (no sag/arch)",
+                    "Elbows tucked",
+                    "No knee support unless assisted"
+                  ]
+                },
+                {
+                  "id": "pushups-tips",
+                  "title": "Tips",
+                  "items": [
+                    "Slow controlled reps build strength",
+                    "Engage core",
+                    "Try diamond/pike pushups"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "exercise-situps",
+              "title": "Situps",
+              "subsections": [
+                {
+                  "id": "situps-form",
+                  "title": "Form",
+                  "items": [
+                    "Feet flat, knees 90°",
+                    "Hands on ears/behind head",
+                    "Elbows touch knees",
+                    "No slamming back down"
+                  ]
+                },
+                {
+                  "id": "situps-tips",
+                  "title": "Tips",
+                  "items": [
+                    "Controlled descent",
+                    "Look diagonally up to reduce strain",
+                    "Use mat if needed"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "exercise-crunches",
+              "title": "Crunches",
+              "subsections": [
+                {
+                  "id": "crunches-form",
+                  "title": "Form",
+                  "items": [
+                    "Legs raised 90°",
+                    "No crossed legs",
+                    "Controlled motion"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "exercise-planks",
+              "title": "Planks",
+              "subsections": [
+                {
+                  "id": "planks-form",
+                  "title": "Form",
+                  "items": [
+                    "Straight body alignment",
+                    "Fists on ground",
+                    "Feet close together",
+                    "No breath holding"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drills",
+      "title": "Drills",
+      "content": [
+        "General rules to follow during all drill practice:"
+      ],
+      "items": [
+        "Follow timing strictly",
+        "Maintain discipline",
+        "Incorrect drills trigger samula correction",
+        "Stay still when required"
+      ],
+      "subsections": [
+        {
+          "id": "drill-legend",
+          "title": "Drill Legend",
+          "metadata": "Category colour codes used on the parade square.",
+          "table": {
+            "headers": [
+              "Term",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "stationary",
+                "Standing drills"
+              ],
+              [
+                "motion",
+                "Marching drills"
+              ],
+              [
+                "precautionary",
+                "Safety drills"
+              ],
+              [
+                "lanka",
+                "Special drills"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "key-commands",
+          "title": "Key Commands",
+          "metadata": "Bahasa commands and their meaning.",
+          "table": {
+            "headers": [
+              "Term",
+              "Meaning"
+            ],
+            "rows": [
+              [
+                "sediya",
+                "Attention stance"
+              ],
+              [
+                "senandiri",
+                "Stand at ease"
+              ],
+              [
+                "tiam",
+                "Silence, no movement"
+              ],
+              [
+                "pandang_kehadapan",
+                "Look forward"
+              ],
+              [
+                "kekanan_puseng",
+                "Right turn 90°"
+              ],
+              [
+                "kekiri_puseng",
+                "Left turn"
+              ],
+              [
+                "keblakan_puseng",
+                "About turn 180°"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "marching-drills",
+          "title": "Marching Drills",
+          "items": [
+            "Dari kiri/kanan cepat jalan",
+            "Hentak kaki",
+            "Berhenti",
+            "Maju",
+            "Kiri/Kanan belok",
+            "Impit kiri/kanan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gsk",
+      "title": "General Specialist Knowledge (GSK)",
+      "content": [
+        "Purpose: Build SAF/NCC knowledge and patriotism",
+        "Vision: Extraordinary youth leaders",
+        "NCC Mission: Develop leaders through military activities",
+        "SAF Mission: Defend Singapore via deterrence and diplomacy",
+        "Pledge: Loyalty, discipline, service to country"
+      ],
+      "subsections": [
+        {
+          "id": "core-values",
+          "title": "Core Values",
+          "items": [
+            "Loyalty",
+            "Uprightness",
+            "Leadership",
+            "Discipline",
+            "Responsibility",
+            "Care",
+            "Adventure",
+            "Safety"
+          ]
+        },
+        {
+          "id": "saf-branches",
+          "title": "SAF Branches",
+          "items": [
+            "Army",
+            "Navy",
+            "Air Force",
+            "Digital and Intelligence Service"
+          ]
+        },
+        {
+          "id": "sar21-facts",
+          "title": "SAR-21 Facts",
+          "table": {
+            "headers": [
+              "Spec",
+              "Value"
+            ],
+            "rows": [
+              [
+                "Range",
+                "460m"
+              ],
+              [
+                "Magazine capacity",
+                "30"
+              ],
+              [
+                "Scope",
+                "1.5x"
+              ]
+            ]
+          },
+          "items": [
+            "Semi-automatic",
+            "Gas operated",
+            "Magazine fed"
+          ],
+          "content_after": [
+            "Immediate action: Safe, Tilt, Check"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ifc",
+      "title": "Individual Field Craft (IFC)",
+      "content": [
+        "Core skills every cadet must demonstrate:"
+      ],
+      "items": [
+        "Camouflage",
+        "Movement",
+        "Field signals",
+        "Navigation",
+        "Distance judging"
+      ],
+      "subsections": [
+        {
+          "id": "field-signals",
+          "title": "Field Signals",
+          "items": [
+            "Enemy ahead",
+            "Take cover",
+            "Halt",
+            "Double up",
+            "Gather",
+            "Ambush"
+          ]
+        },
+        {
+          "id": "navigation",
+          "title": "Navigation",
+          "content": [
+            "Military Grid Reference format: xxx, yyy",
+            "Rules:"
+          ],
+          "items": [
+            "East before North",
+            "No decimals"
+          ]
+        },
+        {
+          "id": "distance-judging",
+          "title": "Distance Judging",
+          "content": [
+            "Factors that affect how accurately you can judge range:"
+          ],
+          "items": [
+            "Visibility",
+            "Sun position",
+            "Elevation",
+            "Target size",
+            "Colour",
+            "Terrain",
+            "Water"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cheers",
+      "title": "Cheers",
+      "content": [
+        "Sing these at the end of a good day on the parade square:"
+      ],
+      "items": [
+        "Training to be soldiers",
+        "Airborne Ranger",
+        "C-130",
+        "Purple Light",
+        "Count by the Count",
+        "Camp STEEL march song"
+      ]
+    },
+    {
+      "id": "resources",
+      "title": "Resources",
+      "links": [
+        {
+          "href": "https://sites.google.com/view/adc-oal/home?authuser=0",
+          "title": "ADC OAL Resources",
+          "description": "Officer Cadet Course Officer Advanced Learning portal."
+        },
+        {
+          "href": "https://sites.google.com/view/hqncc-learning-hub-2020/home?authuser=0",
+          "title": "HQ NCC Learning Hub 2020",
+          "description": "Official NCC HQ learning resources site."
+        }
+      ],
+      "subsections": [
+        {
+          "id": "credits",
+          "title": "Credits",
+          "items": [
+            "EXCO 2025-2026",
+            "ChatGPT (5%)",
+            "Previous senior notes"
+          ]
+        }
+      ]
+    }
+  ]
+}

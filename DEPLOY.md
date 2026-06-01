@@ -69,7 +69,16 @@ This inserts:
 - 4 rows into `platoon_stats` (one per platoon, all zeroed out — fill in from the admin panel)
 - 1 row into `content` (type = `contact`) with placeholder contact info
 
-The `content` row for `notes` is **not** seeded here because the full notes JSON is large. It's easiest to load it after first deploy via the **Admin → Notes** page. (If you want to seed it via SQL, see the "Optional: seed notes via SQL" section below.)
+The `content` row for `notes` is **not** seeded here because the full notes JSON is large. It's easiest to load it after first deploy via the **Admin → Notes** page, or with the helper script:
+
+```bash
+# 1. (Optional) regenerate db/notes.json from the source-of-truth
+npm run notes:build
+# 2. Push it into Supabase (reads env vars from .env or shell)
+npm run notes:load
+```
+
+(See "Optional: seed notes via SQL" below for a pure-SQL alternative.)
 
 ---
 

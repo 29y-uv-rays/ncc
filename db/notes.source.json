@@ -1,0 +1,248 @@
+{
+  "title": "National Cadet Corps Notes",
+  "created_by": "RINCC EXCO 25-26",
+  "sections": {
+    "overview": {
+      "purpose": "Support understanding of NCC concepts for Specialist Assessment and cadet leadership.",
+      "specialist_assessment": {
+        "required_for": "Y3 Cadets",
+        "promotion": "3rd Sergeant",
+        "components": [
+          {
+            "name": "Physical Training",
+            "weightage": 50,
+            "details": [
+              "25 pushups in 1 min",
+              "30 situps in 1 min",
+              "2.4km run"
+            ]
+          },
+          {
+            "name": "General Specialist Knowledge",
+            "weightage": 50,
+            "details": [
+              "NCC & SAF knowledge",
+              "Safety",
+              "SAR-21",
+              "Navigation",
+              "IFC theory quiz"
+            ]
+          },
+          {
+            "name": "Individual Field Craft",
+            "weightage": 100,
+            "details": [
+              "Field signals",
+              "Judging distances",
+              "Movement by day",
+              "Target indication"
+            ]
+          }
+        ]
+      }
+    },
+
+    "physical_training": {
+      "importance": [
+        "Builds discipline, perseverance, mental fitness",
+        "Maintains health",
+        "Cadet leadership example",
+        "Supports 'cadet strong' concept"
+      ],
+      "cadet_strong_definition": "Resilient mind, fit body, committed heart",
+      "expected_standards": {
+        "Y1": {
+          "pushups": 5,
+          "situps": 20,
+          "plank_seconds": 45,
+          "running": "2 min/round"
+        },
+        "Y2": {
+          "pushups": 15,
+          "situps": 25,
+          "plank_seconds": 60,
+          "running": "1.5 min/round"
+        },
+        "Y3": {
+          "pushups": 25,
+          "situps": 30,
+          "plank_seconds": 75,
+          "running": "1.25 min/round"
+        }
+      },
+      "training_notes": [
+        "Form over speed",
+        "Progressive overload recommended",
+        "Train outside CCA required",
+        "Avoid overexertion"
+      ],
+      "exercises": {
+        "pushups": {
+          "key_points": [
+            "Hands slightly wider than shoulders",
+            "Body straight (no sag/arch)",
+            "Elbows tucked",
+            "No knee support unless assisted"
+          ],
+          "tips": [
+            "Slow controlled reps build strength",
+            "Engage core",
+            "Try diamond/pike pushups"
+          ]
+        },
+        "situps": {
+          "key_points": [
+            "Feet flat, knees 90°",
+            "Hands on ears/behind head",
+            "Elbows touch knees",
+            "No slamming back down"
+          ],
+          "tips": [
+            "Controlled descent",
+            "Look diagonally up to reduce strain",
+            "Use mat if needed"
+          ]
+        },
+        "crunches": {
+          "key_points": [
+            "Legs raised 90°",
+            "No crossed legs",
+            "Controlled motion"
+          ]
+        },
+        "planks": {
+          "key_points": [
+            "Straight body alignment",
+            "Fists on ground",
+            "Feet close together",
+            "No breath holding"
+          ]
+        }
+      }
+    },
+
+    "drills": {
+      "general_rules": [
+        "Follow timing strictly",
+        "Maintain discipline",
+        "Incorrect drills trigger samula correction",
+        "Stay still when required"
+      ],
+      "legend": {
+        "stationary": "Standing drills",
+        "motion": "Marching drills",
+        "precautionary": "Safety drills",
+        "lanka": "Special drills"
+      },
+      "key_commands": {
+        "sediya": "Attention stance",
+        "senandiri": "Stand at ease",
+        "tiam": "Silence, no movement",
+        "pandang_kehadapan": "Look forward",
+        "kekanan_puseng": "Right turn 90°",
+        "kekiri_puseng": "Left turn",
+        "keblakan_puseng": "About turn 180°"
+      },
+      "marching_drills": [
+        "Dari kiri/kanan cepat jalan",
+        "Hentak kaki",
+        "Berhenti",
+        "Maju",
+        "Kiri/Kanan belok",
+        "Impit kiri/kanan"
+      ]
+    },
+
+    "gsk": {
+      "purpose": "Build SAF/NCC knowledge and patriotism",
+      "vision": "Extraordinary youth leaders",
+      "mission_ncc": "Develop leaders through military activities",
+      "mission_saf": "Defend Singapore via deterrence and diplomacy",
+      "pledge_summary": "Loyalty, discipline, service to country",
+      "values": [
+        "Loyalty",
+        "Uprightness",
+        "Leadership",
+        "Discipline",
+        "Responsibility",
+        "Care",
+        "Adventure",
+        "Safety"
+      ],
+      "saF_branches": [
+        "Army",
+        "Navy",
+        "Air Force",
+        "Digital and Intelligence Service"
+      ],
+      "sar21_facts": {
+        "range": "460m",
+        "magazine_capacity": 30,
+        "scope": "1.5x",
+        "characteristics": [
+          "Semi-automatic",
+          "Gas operated",
+          "Magazine fed"
+        ],
+        "immediate_action": "Safe, Tilt, Check"
+      }
+    },
+
+    "ifc": {
+      "skills": [
+        "Camouflage",
+        "Movement",
+        "Field signals",
+        "Navigation",
+        "Distance judging"
+      ],
+      "field_signals": [
+        "Enemy ahead",
+        "Take cover",
+        "Halt",
+        "Double up",
+        "Gather",
+        "Ambush"
+      ],
+      "navigation": {
+        "mgr_format": "xxx, yyy",
+        "rules": [
+          "East before North",
+          "No decimals"
+        ]
+      },
+      "distance_judging": {
+        "factors": [
+          "Visibility",
+          "Sun position",
+          "Elevation",
+          "Target size",
+          "Colour",
+          "Terrain",
+          "Water"
+        ]
+      }
+    },
+
+    "cheers": [
+      "Training to be soldiers",
+      "Airborne Ranger",
+      "C-130",
+      "Purple Light",
+      "Count by the Count",
+      "Camp STEEL march song"
+    ],
+
+    "resources": {
+      "links": [
+        "https://sites.google.com/view/adc-oal/home?authuser=0",
+        "https://sites.google.com/view/hqncc-learning-hub-2020/home?authuser=0"
+      ],
+      "credits": [
+        "EXCO 2025-2026",
+        "ChatGPT (5%)",
+        "Previous senior notes"
+      ]
+    }
+  }
+}
