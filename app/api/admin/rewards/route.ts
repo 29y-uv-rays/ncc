@@ -88,6 +88,24 @@ async function patchHandler(request: Request) {
   return NextResponse.json({ ok: true });
 }
 
+async function deleteHandler(request: Request) {
+  const body = await readJson<{ id?: unknown }>(request);
+  const id = Number(body.id);
+
+  if (!Number.isInteger(id) || id <= 0) return jsonError("Invalid id.", 400);
+
+  const { error } = await getSupabaseAdmin()
+    .from("rewards")
+    .delete()
+    .eq("id", id);
+  if (error) {
+    console.error("[admin rewards] delete error", error);
+    return jsonError("Failed to delete reward.", 500);
+  }
+  return NextResponse.json({ ok: true });
+}
+
 export const GET = withAdmin(getHandler);
 export const POST = withAdmin(postHandler);
 export const PATCH = withAdmin(patchHandler);
+export const DELETE = withAdmin(deleteHandler);
