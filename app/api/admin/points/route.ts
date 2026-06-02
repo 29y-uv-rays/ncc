@@ -28,9 +28,9 @@ async function handler(request: Request) {
   if (!Number.isInteger(points) || points === 0) {
     return jsonError("Points must be a non-zero integer.", 400);
   }
-  if (Math.abs(points) > 10000) {
-    return jsonError("Points value out of range.", 400);
-  }
+if (Math.abs(points) > 300000) {
+  return jsonError("Points value out of range.", 400);
+}
   if (!VALID_CATEGORIES.has(category)) {
     return jsonError("Invalid category.", 400);
   }
